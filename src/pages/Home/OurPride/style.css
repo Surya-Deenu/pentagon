@@ -1,0 +1,112 @@
+.our-pride {
+  padding: 140px 0;
+}
+.our-contant-left {
+  padding-left: 50px !important;
+}
+.ourpride-content-align {
+  width: 74%;
+  margin: 0 auto;
+}
+.our-heading4-contant {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 34px;
+  color: #23667b;
+}
+.out-prah-contant {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 32px;
+  color: #000c10;
+  padding-top: 15px;
+}
+.carousel-header-menu {
+  color: #000c10;
+}
+.our-pride-slide-contant {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 43px;
+  line-height: 55px;
+  color: #000000;
+  text-align: start;
+  padding-left: 40px;
+}
+.slider-contant-heading {
+  position: static !important;
+  text-align: start !important;
+}
+.color-block-contant {
+  background-color: rgba(0, 12, 16, 0.1) !important;
+}
+.parah-slide-child {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(0, 12, 16, 0.8);
+}
+.parah-parent-contant {
+  text-align: end;
+  padding-right: 50px;
+  padding-bottom: 30px;
+}
+.parah-slide-child-first {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000c10;
+}
+
+@media (min-width: 768px) and (max-width: 990px) {
+  .our-pride-slide-contant {
+    font-size: 36px !important;
+  }
+  .ourpride-content-align {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 230px) and (max-width: 600px) {
+  .our-pride-slide-contant {
+    font-size: 28px !important;
+  }
+}
+@media (min-width: 230px) and (max-width: 767px) {
+  .our-pride {
+    padding: 35px 0;
+  }
+  .our-pride-slide-contant {
+    padding-left: 0;
+    font-size: 32px !important;
+    line-height: 30px !important;
+  }
+  .ourpride-content-align {
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  .slider-contant-heading {
+    position: static !important;
+    text-align: start !important;
+  }
+}
+
+@media (min-width: 820px) and (max-width: 1180px) {
+  .our-pride {
+    padding: 70px 0;
+  }
+  .ourpride-content-align {
+    width: 90%;
+    margin: 0 auto;
+  }
+}

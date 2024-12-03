@@ -1,0 +1,52 @@
+.card-project-section{
+    width:77%;
+    margin:0 auto;
+}
+.card-img-top{
+    height:350px;
+    object-fit: cover;
+}
+.project-card{
+    margin-bottom: 60px;
+}
+.completed {
+    background-color: #ECFFE8;
+    border: 1px solid #2BA20D;
+    border-radius: 26px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 17px;
+    color: #2BA10D;
+    padding:3px 10px;
+}
+.text-color-content{
+    color:inherit!important;
+    text-decoration: none!important;
+}
+
+.card-text{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.5);
+}
+.card-blog-post-section{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    padding-bottom:130px;
+}
+.ongoing{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 17px;
+    color: #D7AF21;
+    background-color: #FCF7E7;
+    border: 1px solid #D7AF21;
+    border-radius: 26px;
+    padding:3px 10px;
+}

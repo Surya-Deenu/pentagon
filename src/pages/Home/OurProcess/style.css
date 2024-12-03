@@ -1,0 +1,114 @@
+.engeneering-images{
+    padding:100px 80px;
+}
+.our-process-content-img{
+    background: #171429;
+}
+.our-process-heading{
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 80px;
+    color: #FFFFFF;
+    padding-top:70px;
+}
+.our-process-parah{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+.our-process-small-heading{
+    color:rgba(255, 255, 255, 0.1);
+    font-size: 55px;
+    font-weight: 700;
+}
+.heading-ourprocess-top{
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 32px;
+    color: #FFFFFF;
+    text-align: center;
+    padding-bottom:50px;
+    padding-top:15px;
+}
+.design-heading-left{
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 25px;
+    color: #ffffffe0;
+    padding: 20px 0;
+}
+.desing-parah-left{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 34px;
+    color: rgba(255, 255, 255, 0.6);
+    padding: 0 50px;
+}
+.process-three-content{
+    padding-top: 30px;
+    padding-bottom: 100px;
+}
+
+@media (min-width: 250px) and (max-width: 768px) { 
+    .engeneering-images {
+        padding: 10px 20px;
+    }
+    .our-process-heading {
+        font-size: 36px;
+        line-height: 55px;
+        padding-top: 30px;
+    }
+    .our-process-parah {
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .our-process-small-heading {
+        font-size: 30px;
+        padding-bottom: 20px;
+    }
+    .heading-ourprocess-top {
+        padding-bottom: 10px;
+        padding-top: 40px;
+    }
+    .desing-parah-left {
+        padding: 0 24px;
+    }
+    .process-three-content {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .our-process-parah {
+        padding-right: 35px;
+    }
+    .our-process-image-align{
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media (min-width:820px) and (max-width:1180px) {
+    .engeneering-images {
+        padding: 50px 30px;
+    }
+    .our-process-heading {
+        font-size: 63px;
+    }
+    .desing-parah-left {
+        padding: 0 20px;
+    }
+    
+}

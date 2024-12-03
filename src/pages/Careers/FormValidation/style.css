@@ -1,0 +1,79 @@
+.form-validate{
+    
+    background-color:#F9F9F9;
+    padding:77px 0;
+}
+.form-valide-content{
+    max-width: 77%;
+    margin:0 auto;
+}
+.email-address{
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 19px;
+color: rgba(8, 20, 41, 0.8);
+}
+.name-label{
+    background-color: #FFFFFF;
+    border: 1px solid rgba(0, 12, 16, 0.1);
+    border-radius: 12px;
+    padding:13px 8px;
+}
+.form-submit-button{
+    background-color: #23667B;
+    border-radius: 34px;
+    color: #FFFFFF;
+    padding:12px 110px;
+    border:none;
+    font-size:18px;
+}
+
+.form-submit-button .spinner-border{
+   width: 24px;
+   height: 24px;
+}
+.form-submit-button:disabled{
+   cursor: not-allowed !important;
+}
+
+.form-submit-button:disabled:hover{
+    background-color: #23667B !important;
+}
+.form-submit-button:hover{
+    background-color: #E93631;
+    transition:1s;
+}
+
+
+.input-group {
+    align-items: center!important;
+}
+.choose-change-color{
+    background-color: #23667B!important;
+    color:#ffffff;
+    padding:17px 10px;
+    border-radius: 12px;
+}
+.input-group{
+    display: flex;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+    padding-left: 5px;
+    border-radius: 12px;
+    width:100%;
+}
+.upload-file-button {
+    background-color: #FFFFFF!important;
+    border: 1px solid rgba(0, 12, 16, 0.1)!important;
+    border-radius: 12px 0 0 12px!important;
+    padding:13px 8px!important;
+}
+
+@media (min-width:300px) and (max-width:1180px) {
+    .form-valide-content{
+        max-width: 95% !important;
+        margin:0 auto;
+    }
+}

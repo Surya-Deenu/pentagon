@@ -1,0 +1,56 @@
+.form-validate{
+    
+    background-color:#F9F9F9;
+    padding:77px 0;
+}
+.form-valide-content{
+    max-width: 77%;
+    margin:0 auto;
+}
+.email-address{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 19px;
+
+color: rgba(8, 20, 41, 0.8);
+}
+.name-label{
+    background-color: #FFFFFF;
+    border: 1px solid rgba(0, 12, 16, 0.1);
+    border-radius: 12px;
+    padding:13px 8px;
+}
+.form-submit-button{
+    background-color: #23667B;
+    border-radius: 34px;
+    color: #FFFFFF;
+    padding:12px 110px;
+    border:none;
+    font-size:18px;
+}
+
+.form-submit-button .spinner-border{
+    width: 24px;
+    height: 24px;
+ }
+ .form-submit-button:disabled{
+    cursor: not-allowed !important;
+ }
+ 
+ .form-submit-button:disabled:hover{
+     background-color: #23667B !important;
+ }
+
+.form-submit-button:hover{
+    background-color: #E93631;
+    transition:1s;
+}
+
+@media (min-width:360px) and (max-width:1180px) {
+    .form-valide-content{
+        max-width: 93%;
+        margin:0 auto;
+    }
+}

@@ -1,0 +1,98 @@
+.banner-projects{
+    position:relative;
+}
+.projects-heading-content{
+    text-align: center;
+    position: absolute;
+    width:100%;
+    height: 100%;
+    top: 0px;
+    left:0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.heading-project-banner{
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 81px;
+    color: #FFFFFF;
+    padding-bottom: 10px;
+}
+.parah-project-banner{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 35px;
+    color: #FFFFFF;
+}
+
+
+.image-blog-banner-res {
+    width: 100%;
+    height: 400px !important;
+}
+@media (min-width: 768px) and (max-width: 992px) {
+    .image-blog-banner-res {
+        height: 350px !important;
+    }
+    .projects-heading-content {
+     
+    }
+    .heading-project-banner {
+        font-size: 42px !important;
+        line-height: 47px !important;
+        padding-bottom: 0px;
+    }
+    .projects-heading-content {
+        text-align: center;
+        position: absolute;
+        padding: 0px 40px;
+        top:15% !important;
+        left:10px;
+    }
+}
+
+@media (min-width:992px) and (max-width:1180px) {
+    .image-blog-banner-res {
+        height: 350px !important;
+    }
+    
+}
+
+
+@media (min-width:300px) and (max-width:560px) {
+    .image-blog-banner-res{
+        height:250px !important;
+    }
+    .heading-project-banner {
+        font-size: 28px !important;
+        line-height: 26px !important;
+        padding-bottom: 0px;
+    }
+    }
+@media (min-width:560px) and (max-width:767px) {
+    .heading-project-banner {
+        font-size: 42px !important;
+        line-height: 47px !important;
+        padding-bottom: 0px;
+    }
+  
+}
+
+@media (min-width:300px) and (max-width:767px) {
+    .image-blog-banner-res{
+        height:300px;
+    }
+   
+
+    .parah-project-banner{
+        font-size: 14px;
+        line-height: 26px;
+    }
+    
+}

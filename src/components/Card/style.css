@@ -1,0 +1,95 @@
+.our-heading4-content {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 34px;
+  color: #23667b;
+  text-align: center;
+}
+.card-projects-image {
+  width: 186px;
+  height: 186px;
+  object-fit: cover;
+}
+.image-devide-contant {
+  display: -webkit-inline-box !important;
+  border: none !important;
+  background: #f9f9f9 !important;
+  width: 100%;
+}
+.contant-right-side {
+  width: 60%;
+  padding-left: 10px !important;
+  padding-top: 10px !important;
+}
+.read-more {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  text-decoration: none;
+}
+.card-parah-name {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  color: #000000;
+}
+.card-title-name {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 29px;
+  color: #000000;
+}
+.card-projects-carousel {
+  padding: 35px 70px;
+}
+
+@media (min-width: 250px) and (max-width: 768px) {
+  .image-devide-contant {
+    display: block !important;
+  }
+  .card-projects-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    overflow: hidden;
+  }
+  .contant-right-side {
+    width: 100%;
+    padding-left: 10px !important;
+    padding-top: 30px !important;
+  }
+  .card-projects-carousel {
+    padding: 30px 30px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .contant-right-side {
+    width: 100%;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    padding-top: 30px !important;
+  }
+  .card-projects-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    overflow: hidden;
+  }
+  .image-devide-contant {
+    display: block !important;
+  }
+  .card-center-content {
+    margin-top: 0px !important;
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,170 @@
+.about-contant {
+  background: #f9f9f9;
+  padding: 100px 0;
+}
+.col-xl-2 {
+  text-align: center;
+}
+@media (min-width: 1200px) {
+  .col-xl-2 {
+    width: 20.666667% !important;
+  }
+}
+.about-heading-contant {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 55px;
+  line-height: 80px;
+  text-align: center;
+  color: #000c10;
+  padding-bottom: 30px;
+}
+.about-button-home {
+  background: #f9f9f9;
+  border: 2px solid #e93631;
+  border-radius: 34px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #e93631;
+  padding: 8px 24px;
+  text-decoration: none;
+}
+.about-button-home:hover {
+  background: #e93631;
+  color: #ffffff;
+  transition: 1s;
+}
+.about-parah-right {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 30px;
+  color: #000c10;
+  padding-bottom: 15px;
+}
+.about-button-contant {
+  padding-top: 50px;
+}
+.employee-number {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.emp-num-10 {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 70px;
+  line-height: 101px;
+  color: #000c10;
+}
+.span-contant-parah {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+  color: #000c10;
+}
+.employee-number-bottom {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  padding-top: 40px;
+}
+.addnumber {
+  padding: 60px 0;
+}
+
+.about-content-right-left {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) and (max-width: 990px) {
+  .about-heading-contant {
+    font-size: 44px !important;
+  }
+}
+@media (min-width: 540px) and (max-width: 768px) {
+  .about-heading-contant {
+    font-size: 38px !important;
+  }
+}
+@media (min-width: 250px) and (max-width: 540px) {
+  .about-heading-contant {
+    font-size: 28px !important;
+    line-height: 36px !important;
+  }
+}
+@media (min-width: 250px) and (max-width: 768px) {
+  .employee-number {
+    display: block;
+    justify-content: space-between;
+    text-align: center;
+  }
+  .employee-number-bottom {
+    display: block;
+  }
+  .about-heading-contant {
+    font-size: 38px;
+    line-height: 46px;
+  }
+  .emp-num-10 {
+    font-size: 50px;
+    line-height: 80px;
+  }
+  .span-contant-parah {
+    font-size: 20px;
+    line-height: 27px;
+  }
+  .about-parah-right {
+    font-size: 16px;
+  }
+  .respons-about-button {
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .about-image-left {
+    padding-left: 30px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1119px) {
+  .respons-about-button {
+    text-align: center;
+  }
+  .about-button-contant {
+    padding-top: 12px;
+  }
+  .about-contant {
+    background: #f9f9f9;
+    padding: 70px 0;
+  }
+  .emp-num-10 {
+    font-size: 60px;
+  }
+  .span-contant-parah {
+    font-size: 25px;
+  }
+}
+
+@media (min-width: 820px) and (max-width: 1180px) {
+  .employee-number {
+    display: block;
+    justify-content: space-between;
+    text-align: center;
+  }
+  .employee-number-bottom {
+    display: block;
+    justify-content: space-between;
+    text-align: center;
+  }
+}

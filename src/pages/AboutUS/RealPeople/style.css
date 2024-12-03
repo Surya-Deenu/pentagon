@@ -1,0 +1,63 @@
+.people-content-heding{
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 55px;
+    line-height: 87px;
+    text-align: center;
+    color: #000000;
+    padding-top:50px;
+    padding-bottom:30px;
+}
+.real-people-page{
+    background-color: #F9F9F9;;
+}
+.people-image-grid{
+    padding:30px 85px;
+}
+.peoplewhomadeImg img{
+    width: 627px;
+    height: 627px;
+    object-fit: cover;
+    object-position: top;
+}
+.people-details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+@media (min-width:768px) and (max-width:1024px) {
+    .people-image-grid {
+        padding: 0 10px;
+    }
+}
+
+@media (min-width:230px) and (max-width:768px) {
+    .people-image-grid {
+        padding: 0 10px;
+    }
+}
+@media (min-width:230px) and (max-width:480px) {
+    .peoplewhomadeImg img{
+        width: 100% !important;
+        height: 100% !important;
+        max-width: 250px !important;
+        max-height: 250px !important;
+    }
+}
+@media (min-width:480px) and (max-width:768px) {
+    .peoplewhomadeImg img{
+        width: 100% !important;
+        height: 100% !important;
+        max-width: 350px !important;
+        max-height: 350px !important;
+        overflow: hidden !important;
+    }
+}
+@media (min-width:230px) and (max-width:768px) {
+    .people-image-grid {
+        padding: 0 10px;
+    }
+   
+}

@@ -1,0 +1,67 @@
+.what-we-section{
+    background-color: #F9F9F9;
+    padding:100px 0px;
+}
+.what-we-heading4{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 34px;
+    color: #23667B;
+}
+.what-we-second-heading4{
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 50px;
+    color: #000000;
+    padding:10px 0;
+}
+.what-we-parah-left{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 30px;
+    color: #000C10;
+}
+.left-content-whatwe{
+    padding-top: 30px;
+}
+.contant-responsive-right{
+    width:75%;
+    margin:0 auto;
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .contant-responsive-right{
+        display: flex;
+        align-items: center;
+    }
+    .what-we-section {
+        background-color: #F9F9F9;
+        padding: 20px 0px;
+    }
+    .contant-responsive-right {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .image-align-what-content{
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media (min-width:236px) and (max-width:768px) {
+    .what-we-section {
+        padding: 40px 0px;
+    }
+    .contant-responsive-right {
+        padding-right: 10px!important;
+        width: 90%;
+    margin: 0 auto;
+    }
+}

@@ -1,0 +1,62 @@
+.awards{
+    background-color: #171429;
+    padding:110px 0;
+}
+.award-heading-left{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 56px;
+    color: #FFFFFF;
+    padding-top: 50px;
+}
+.award-parah-right{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 34px;
+    color: rgba(255, 255, 255, 0.6);
+    padding-right:40px;
+    padding-top:10px;
+}
+.award-section-page{
+    padding-left:90px;
+}
+.awrd-top-left{
+    padding: 0px 60px 30px 0;
+}
+.awrd-top-right{
+    padding: 0 0px 11px 60px;
+}
+.awrd-bottom-left{
+    padding: 48px 60px 30px 0;
+}
+.awrd-buttom-right{
+    padding: 40px 0px 11px 60px;
+}
+
+
+@media (min-width:768px) and (max-width:1024px) {
+    .awards {
+        background-color: #171429;
+        padding: 40px 0;
+    }
+    .award-section-page {
+        padding-left: 25px;
+    }
+}
+
+@media (min-width:230px) and (max-width:768px) {
+    .awards {
+        padding: 30px 0;
+    }
+    .award-section-page {
+        padding-left: 20px;
+    }
+    .award-parah-right {
+        padding-right: 21px;
+        padding-top: 10px;
+    }
+}

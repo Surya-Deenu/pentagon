@@ -1,0 +1,63 @@
+.BannerImage {
+  width: 100%;
+  height: 100%;
+}
+.about-image-content {
+  position: relative;
+}
+.image-overlab-content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.about-page-heading {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 105px;
+  color: #ffffff !important;
+}
+.about-page-paragraph {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 35px;
+  color: #ffffff !important;
+  padding: 10px 0 20px 0;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .about-page-heading {
+    font-size: 48px;
+    line-height: 53px;
+  }
+  .about-page-paragraph {
+    font-size: 20px;
+    line-height: 35px;
+    padding: 10px 0;
+  }
+ 
+}
+
+@media (min-width: 230px) and (max-width: 767px) {
+  .about-page-heading {
+    font-size: 23px;
+    line-height: 30px;
+    color: #ffffff;
+  }
+  .about-page-paragraph {
+    font-size: 12px;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 0.8);
+    padding: 0px 0;
+  }
+ 
+}
