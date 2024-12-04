@@ -29,7 +29,7 @@ const Footer = () => {
                   className="footer-logo-icon logo-image-width"
                 />
               </Link>
-              <div className="d-flex justify-content-start align-items-center gap-3 flex-wrap mt-3 footer-logo-icon">
+              {/* <div className="d-flex justify-content-start align-items-center gap-3 flex-wrap mt-3 footer-logo-icon">
                 <Link>
                   <img
                     src={lingedIn}
@@ -51,7 +51,7 @@ const Footer = () => {
                     className=""
                   />
                 </Link>
-              </div>
+              </div> */}
             </div>
             <div className="col-md-6 col-sm-6 col-lg-3 projects-section-content">
               <h4 className="footer-heading-h4 footer-content-project">

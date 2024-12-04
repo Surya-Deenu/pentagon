@@ -4,12 +4,10 @@ import { Link } from "react-router-dom";
 import "./master.css";
 import "../Buttons/style.css";
 import projects from "../../../constants/data";
-import { useSearchParams } from "react-router-dom";
-const CardProject = () => {
-  const [searchParams] = useSearchParams();
-  const type = searchParams.get("type");
+const CardProject = ({ selectedFilter, setSelectedFilter }) => {
+console.log(projects,"kiasbabsdkjbakjsd");
 
-  const [button, setButton] = useState(0);
+  const [button, setButton] = useState(selectedFilter);
   const [items, setItems] = useState(projects);
   const filteritems = (categItem) => {
     const updatedItems = projects.filter((curElem) => {
@@ -17,6 +15,7 @@ const CardProject = () => {
     });
     setItems(updatedItems);
   };
+
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -26,31 +25,34 @@ const CardProject = () => {
 
   const getButtonNo = (type) => {
     if (type) {
-      if (type === "IT Park") {
-        setButton(1);
-      } else if (type === "Food Industry") {
-        setButton(2);
-      } else if (type === "Data center") {
-        setButton(3);
-      } else if (type === "Mall") {
-        setButton(4);
-      } else if (type === "Banking") {
-        setButton(5);
-      } else if (type === "SEZ") {
-        setButton(6);
+      if (type == 1) {
+        filteritems("IT Park");
+        setSelectedFilter(1);
+      } else if (type === 2) {
+        filteritems("Food Industry");
+        setSelectedFilter(2);
+      } else if (type === 3) {
+        filteritems("Data center");
+        setSelectedFilter(3);
+      } else if (type === 4) {
+        filteritems("Mall");
+        setSelectedFilter(4);
+      } else if (type === 5) {
+        filteritems("Banking");
+        setSelectedFilter(5);
+      } else if (type === 6) {
+        filteritems("SEZ");
+        setSelectedFilter(6);
       } else {
-        setButton(0);
+        setItems(projects);
+        setSelectedFilter(0);
       }
     }
   };
-
   useEffect(() => {
-    if (type) {
-      getButtonNo(type);
+    getButtonNo(button);
+  }, [button]);
 
-      filteritems(type);
-    }
-  }, [type]);
   return (
     <>
       <div className="project-blog-section">
@@ -68,7 +70,6 @@ const CardProject = () => {
             <button
               className={button === 1 ? "active-all" : "project-buttons"}
               onClick={() => {
-                filteritems("IT Park");
                 setButton(1);
               }}
             >
@@ -77,7 +78,6 @@ const CardProject = () => {
             <button
               className={button === 2 ? "active-all" : "project-buttons"}
               onClick={() => {
-                filteritems("Food Industry");
                 setButton(2);
               }}
             >
@@ -86,7 +86,6 @@ const CardProject = () => {
             <button
               className={button === 3 ? "active-all" : "project-buttons"}
               onClick={() => {
-                filteritems("Data center");
                 setButton(3);
               }}
             >
@@ -95,7 +94,6 @@ const CardProject = () => {
             <button
               className={button === 4 ? "active-all" : "project-buttons"}
               onClick={() => {
-                filteritems("Mall");
                 setButton(4);
               }}
             >
@@ -104,7 +102,6 @@ const CardProject = () => {
             <button
               className={button === 5 ? "active-all" : "project-buttons"}
               onClick={() => {
-                filteritems("Banking");
                 setButton(5);
               }}
             >
@@ -113,7 +110,6 @@ const CardProject = () => {
             <button
               className={button === 6 ? "active-all" : "project-buttons"}
               onClick={() => {
-                filteritems("SEZ");
                 setButton(6);
               }}
             >

@@ -32,13 +32,15 @@ const OurClients = () => {
   const settings = {
     dots: false,
     infinite: true,
-    speed: 3500,
+    speed: 2000,
     slidesToShow: 8,
     slidesToScroll: 1,
+    centerMode: true,
     arrows: false,
     autoplay: true,
     swipeToSlide: true,
     autoplaySpeed: 0,
+    pauseOnHover: true,
     cssEase: "linear",
     responsive: [
       {

@@ -43,7 +43,7 @@ const FormValidation = () => {
   const handleSubmit = (values, { resetForm }) => {
     setLoader(true);
     emailjs
-      .send("service_h5zcz01", "template_3u5jelw", values, "u5EfxDNNwM6O2QquC")
+      .send("service_h6ij8rs", "template_vc5d52e", values, "3y6ATAP6Ckm2kuiuG")
       .then(
         (response) => {
           resetForm();

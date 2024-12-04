@@ -15,7 +15,8 @@ const AboutSection = () => {
       <div className="about-contant">
         <div className="container">
           <h2 className="about-heading-contant">
-            We are a fast-growing company in the HVAC <br />
+            We are a fast-growing company in the HVAC{" "}
+            <br className="d-none d-md-block" />
             space in the last decade in India.
           </h2>
           <div className="about-content-right-left">

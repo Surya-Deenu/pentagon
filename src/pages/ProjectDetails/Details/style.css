@@ -86,3 +86,12 @@
         margin: 0 auto;
     }
 }
+
+.details-content-blog .title{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+    color: #000000;
+}

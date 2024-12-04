@@ -88,10 +88,10 @@ const FormValidation = () => {
                 setLoader(true);
                 emailjs
                   .send(
-                    "service_j6xzw3s",
-                    "template_m9m2h6o",
+                    "service_003yy0y",
+                    "template_qa597ga",
                     values,
-                    "u5EfxDNNwM6O2QquC"
+                    "3y6ATAP6Ckm2kuiuG"
                   )
                   .then(
                     (response) => {

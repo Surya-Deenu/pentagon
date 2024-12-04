@@ -1,87 +1,127 @@
+.top-content-border {
+  position: relative;
+}
+.timeline-top {
+  border-bottom: 1px solid;
+}
 
-.top-content-border{
-    position:relative;
+.slide-prah-timeline {
+  position: absolute;
+  left: 190px;
+  top: 140px;
 }
-.timeline-top{
-    border-bottom:1px solid;
+.buttom-content-fix {
+  position: relative;
+}
+.slide-buttom-timeline {
+  position: absolute;
+  /* display: flex; */
+  text-align: start;
+  left: 380px;
+  top: 20px;
+}
+.silde-image-timelin {
+  display: inline !important;
+}
+.first-slide-content {
+  padding-top: 23px !important;
+}
+.heading-timeline-section {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 34px;
+  color: #23667b;
+  text-align: center;
+  padding-bottom: 35px;
+}
+.timelene-section {
+  background-color: #f9f9f9;
+  padding: 80px 0;
+}
+.first-image-year-slide {
+  padding-left: 50px;
 }
 
-.slide-prah-timeline{
+@media (min-width: 360px) and (max-width: 767px) {
+  .slide-buttom-timeline {
     position: absolute;
-    left: 190px;
-    top: 140px;
-}
-.buttom-content-fix{
-    position:relative;
-}
-.slide-buttom-timeline{
-    position: absolute;
-    /* display: flex; */
     text-align: start;
-    left: 380px;
+    left: 166px;
     top: 20px;
-}
-.silde-image-timelin{
-    display: inline!important;
-}
-.first-slide-content{
-    padding-top:23px!important;
-}
-.heading-timeline-section{
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 27px;
-    line-height: 34px;
-    color: #23667B;
-    text-align: center;
-    padding-bottom: 35px;
-}
-.timelene-section{
-    background-color: #F9F9F9;
-    padding:80px 0;
-}
-.first-image-year-slide{
-    padding-left:50px;
-}
-
-
-@media (min-width:768px) and (max-width:991px) {
-    .slide-buttom-timeline {
-        text-align: start;
-        left: 387px;
-        top: 9px;
-    }
-    .slide-prah-timeline {
-        position: absolute;
-        left: 155px;
-        top: 151px;
-    }
-}
-
-@media (min-width:820px) and (max-width:1180px) {
-    .slide-buttom-timeline {
-        text-align: start;
-        left: 200px;
-        top: 9px;
-    }
-}
-
-
-@media (min-width:360px) and (max-width:767px) {
-    .slide-buttom-timeline {
-        position: absolute;
-        text-align: start;
-        left: 166px;
-        top: 20px;
-    }
-    .slide-prah-timeline {
-        position: absolute;
-        left: 147px;
-        top: 148px;
-    }
-    .timelene-section {
-    background-color: #F9F9F9;
+  }
+  .slide-prah-timeline {
+    position: absolute;
+    left: 147px;
+    top: 148px;
+  }
+  .timelene-section {
+    background-color: #f9f9f9;
     padding: 40px 0;
+  }
 }
+@media (min-width: 550px) {
+  .tab-timeline {
+    display: block;
+  }
+  .mobile-timeline {
+    display: none;
+  }
+}
+@media (max-width: 550px) {
+  .tab-timeline {
+    display: none;
+  }
+  .mobile-timeline {
+    display: block;
+  }
+  .top .timeline-top img,
+  .buttom .timeline-top img {
+    height: 230px !important;
+  }
+}
+
+@media (min-width: 550px) and (max-width: 1067px) {
+  .tab-timeline .slide-buttom-timeline {
+    left: 10px;
+    right: 210px !important;
+  }
+  .tab-timeline .buttom-content-fix {
+    text-align: end !important;
+  }
+}
+
+@media (min-width: 460px) and (max-width: 550px) {
+  .top .buttom-content-fix {
+    opacity: 0 !important;
+  }
+  .buttom .top-content-border {
+    opacity: 0 !important;
+  }
+}
+@media (min-width: 100px) and (max-width: 460px) {
+  .top .buttom-content-fix,
+  .buttom .timeline-top {
+    opacity: 1 !important;
+  }
+  .top .buttom-content-fix img,
+  .top .slide-prah-timeline,
+  .buttom .slide-buttom-timeline,
+  .buttom .timeline-top img {
+    opacity: 0 !important;
+  }
+
+  .top .slide-buttom-timeline {
+    position: absolute !important;
+    left: 0px !important;
+    top: 10px !important;
+    padding: 20px !important;
+  }
+  .buttom .timeline-top .slide-prah-timeline {
+    position: absolute !important;
+    left: 0px !important;
+    top: 100px !important;
+    padding: 0px 20px !important;
+  }
 }

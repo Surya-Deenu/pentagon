@@ -1,35 +1,60 @@
-import React,{useState,useEffect} from 'react'
-import galleryImage from '../../../assets/Images/galleryImage.png';
-import galleryRight from '../../../assets/Images/galleryRight.png';
-import projects from "../../../constants/data"
-import './style.css'
+import React, { useState, useEffect } from "react";
+import projects from "../../../constants/data";
+import "./style.css";
 
 const ProjectDetailsPage = () => {
-     const params = window.location.pathname.split("/").pop();
-     const[data,setData]=useState();
+  const params = window.location.pathname.split("/").pop();
+  const [data, setData] = useState();
 
-     useEffect(() => {
-        if(params){
-         const value =projects.filter((curElem)=>{
-           return curElem?.id == params;
-         })
-         setData(value[0]);
-        }
-     }, [])
+  useEffect(() => {
+    if (params) {
+      const value = projects.filter((curElem) => {
+        return curElem?.id == params;
+      });
+      setData(value[0]);
+    }
+  }, []);
 
   return (
     <>
-          <div className='blog-project-page'>
-              <div className='details-content-blog'>
-                  <h6 className='pt-3 heading-content-blog-post'>Location: <span className='contentdata'>{data?.location || "---"}</span></h6>
-                  <h6 className='pt-3 heading-content-blog-post'>Nature of job: <span className='contentdata'>{data?.classification || "---"}</span></h6>
-                 {data?.capacity &&  <h6 className='pt-3 heading-content-blog-post'>Installed Capacity: <span className='contentdata'>{data?.capacity || "---"}</span></h6>}
-                  <h6 className='pt-3 heading-content-blog-post'>Area: <span className='contentdata'>{data?.area || "---"}</span></h6>
-           
-                  <h6 className='pt-3 heading-content-blog-post'>HVAC consultant: <span className='contentdata'>{data?.consultant || "---"}</span></h6>
-                  <h6 className='pt-3 heading-content-blog-post'>Job status: <span className='contentdata'>Completed</span></h6>
-                 </div>
-              {/* <div className='gallery-post-details'>
+      <div className="blog-project-page ">
+        <div className="row">
+          <div className="details-content-blog col-12 col-md-6 col-lg-7 d-flex align-items-start align-items-md-center justify-content-start">
+            <div>
+              <h1 className="pt-3 heading-content-blog-post title">
+                {data?.title || "---"}
+              </h1>
+              <h6 className="pt-3 heading-content-blog-post">
+                Location:{" "}
+                <span className="contentdata">{data?.location || "---"}</span>
+              </h6>
+              <h6 className="pt-3 heading-content-blog-post">
+                Nature of job:{" "}
+                <span className="contentdata">
+                  {data?.classification || "---"}
+                </span>
+              </h6>
+              {data?.capacity && (
+                <h6 className="pt-3 heading-content-blog-post">
+                  Installed Capacity:{" "}
+                  <span className="contentdata">{data?.capacity || "---"}</span>
+                </h6>
+              )}
+              <h6 className="pt-3 heading-content-blog-post">
+                Area: <span className="contentdata">{data?.area || "---"}</span>
+              </h6>
+
+              {/* <h6 className='pt-3 heading-content-blog-post'>HVAC consultant: <span className='contentdata'>{data?.consultant || "---"}</span></h6> */}
+              <h6 className="pt-3 heading-content-blog-post">
+                Job status: <span className="contentdata">Completed</span>
+              </h6>
+            </div>
+          </div>
+          <div className="col-12 col-md-6 col-lg-5 mt-3 mt-md-0">
+            <img src={data?.images} alt={data?.title} className="mw-100" />
+          </div>
+        </div>
+        {/* <div className='gallery-post-details'>
                   <h6 className='pt-3 pb-4 heading-content-blog-post'>Gallery</h6>
                   <div>
                       <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
@@ -56,9 +81,9 @@ const ProjectDetailsPage = () => {
                       </div>
                   </div>
               </div> */}
-          </div>
+      </div>
     </>
-  )
-}
+  );
+};
 
 export default ProjectDetailsPage;

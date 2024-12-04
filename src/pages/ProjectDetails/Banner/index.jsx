@@ -12,7 +12,7 @@ useEffect(()=>{
    const value =projects.filter((curElem)=>{
      return curElem.id == params;
    })
-   setTitle(value[0]?.title);
+   setTitle(value[0]?.category);
   }
 },[])
   return (

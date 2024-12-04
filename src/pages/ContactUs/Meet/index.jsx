@@ -11,7 +11,7 @@ const Meet = () => {
             <div className="row">
               <div className="col-xl-3 col-md-6 col-sm-12 p-0">
                 <div className="mumbai-section">
-                  <h5>Head Office, Mumbai</h5>
+                  <h5 className="card_title">Head Office, Mumbai</h5>
                   <p className="meetusaddress">
                     1st Floor, Ganga House, above Kotak Mahindra Bank, LBS Road,
                     Vikhroli West,{" "}
@@ -22,7 +22,7 @@ const Meet = () => {
               </div>
               <div className="col-xl-3 col-md-6 col-sm-12 p-0">
                 <div className="mumbai-section">
-                  <h5>BANGALORE</h5>
+                  <h5 className="card_title">BANGALORE</h5>
                   <p className="meetusaddress">
                     No 03, 02nd Floor,Katha No 1377 ,01st Block Talacauvery
                     Nagar, Vibhutipura, Basavanagar, Bengaluru,{" "}
@@ -33,7 +33,7 @@ const Meet = () => {
               </div>
               <div className="col-xl-3 col-md-6 col-sm-12 p-0">
                 <div className="mumbai-section">
-                  <h5>CHENNAI</h5>
+                  <h5 className="card_title">CHENNAI</h5>
                   <p className="meetusaddress">
                     Plot No.9 ,1st Floor, Akshaya, Elumalai Chettiar Road,
                     Sundaresan Nagar Maduravoyal, Porur, Vanagaram,Tiruvallur,
@@ -45,7 +45,7 @@ const Meet = () => {
               </div>
               <div className="col-xl-3 col-md-6 col-sm-12 p-0">
                 <div className="mumbai-section">
-                  <h5>Hyderabad</h5>
+                  <h5 className="card_title">Hyderabad</h5>
                   <p className="meetusaddress">
                     H.No: 8-3-892/1, Near Sarada College Nagarjuna Nagar,
                     Yellareddyguda, Ameerpet, Hyderabad,{" "}

@@ -1,11 +1,8 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
-import magic from "../../../assets/Images/netMagic.svg";
-import pradeep from "../../../assets/Images/pradeep.svg";
-import kannan from "../../../assets/Images/kannan.svg";
+// *****************************logos**********************************//
 import testi from "../../../assets/Images/test.svg";
 import monials from "../../../assets/Images/monilas.svg";
-// *****************************logos**********************************//
 import dsp from "../../../assets/testimonials/dsp.png";
 import hp from "../../../assets/testimonials/hp.png";
 import jupiter from "../../../assets/testimonials/jupiter-hospital.png";
@@ -19,34 +16,39 @@ const Testimonials = () => {
   const settings = {
     dots: true,
     infinite: true,
-    autoplay: !true,
-    speed: 500,
+    autoplay: true,
+    speed: 1000,
     className: "center",
-    slidesToShow: 3,
+    slidesToShow: 1,
+    centerMode: true,
+    autoplaySpeed: 3000,
     slidesToScroll: 1,
     centerPadding: "60px",
     centerMargin: "60px",
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1120,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: true,
+          centerMode: false,
+          // slidesToShow: 1,
+          // slidesToScroll: 1,
+          // infinite: true,
+          // dots: true,
         },
       },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          initialSlide: 2,
-        },
-      },
+      // {
+      //   breakpoint: 900,
+      //   settings: {
+      //     centerMode: false,
+      //     slidesToShow: 2,
+      //     slidesToScroll: 1,
+      //     initialSlide: 2,
+      //   },
+      // },
       {
         breakpoint: 640,
         settings: {
+          centerMode: false,
           slidesToShow: 1,
           slidesToScroll: 1,
         },
@@ -60,18 +62,22 @@ const Testimonials = () => {
         <div className="container-fluid">
           <h3 className="testimonial-heading">Testimonials</h3>
           <p className="testimonial-paragraph">
-            Our clients are the most valuable thing we have.
+            Our clients are the most valuable
           </p>
           <span>
             <img src={testi} alt="arrrow" className="px-4" />
           </span>
-          <div className="container">
+          <div className="testimonials-slider">
             <Slider {...settings}>
               <div className="testimonial-card-section">
                 <div className="card parent-profile-box ">
                   <figure className="d-flex">
-                    <img src={hp} alt="image" className="testimonial-clientslogo"/>
-                    <h3 className="slider-package-testimonials">HP </h3>
+                    <img
+                      src={hp}
+                      alt="image"
+                      className="testimonial-clientslogo"
+                    />
+                    {/* <h3 className="slider-package-testimonials">HP </h3> */}
                   </figure>
                   <p>
                     Pentagon did an excellent and quality work and completed the
@@ -83,8 +89,12 @@ const Testimonials = () => {
               <div className="testimonial-card-section">
                 <div className="card parent-profile-box ">
                   <figure className="d-flex">
-                    <img src={mindtree} alt="image"  className="testimonial-clientslogo"/>
-                    <h3 className="slider-package-testimonials">Mind tree </h3>
+                    <img
+                      src={mindtree}
+                      alt="image"
+                      className="testimonial-clientslogo"
+                    />
+                    {/* <h3 className="slider-package-testimonials">Mind tree </h3> */}
                   </figure>
                   <p>
                     We are extremely happy and satisfied with the systematic
@@ -98,8 +108,12 @@ const Testimonials = () => {
               <div className="testimonial-card-section">
                 <div className="card parent-profile-box ">
                   <figure className="d-flex">
-                    <img src={netMagic} alt="image"  className="testimonial-clientslogo" style={{height:"50px"}}/>
-                    <h3 className="slider-package-testimonials">NetMagic </h3>
+                    <img
+                      src={netMagic}
+                      alt="image"
+                      className="testimonial-clientslogo"
+                    />
+                    {/* <h3 className="slider-package-testimonials">NetMagic </h3> */}
                   </figure>
                   <p>
                     The Pentagon team completed the work within the stipulated
@@ -115,10 +129,14 @@ const Testimonials = () => {
               <div className="testimonial-card-section">
                 <div className="card parent-profile-box ">
                   <figure className="d-flex">
-                    <img src={jupiter} alt="image"  className="testimonial-clientslogo" />
-                    <h3 className="slider-package-testimonials">
+                    <img
+                      src={jupiter}
+                      alt="image"
+                      className="testimonial-clientslogo"
+                    />
+                    {/* <h3 className="slider-package-testimonials">
                       Jupiter hospital
-                    </h3>
+                    </h3> */}
                   </figure>
                   <p>
                     We are extremely happy that we choose pentagon greatly
@@ -131,8 +149,12 @@ const Testimonials = () => {
               <div className="testimonial-card-section">
                 <div className="card parent-profile-box ">
                   <figure className="d-flex">
-                    <img src={parleargo} alt="image"  className="testimonial-clientslogo"/>
-                    <h3 className="slider-package-testimonials">Parle agro</h3>
+                    <img
+                      src={parleargo}
+                      alt="image"
+                      className="testimonial-clientslogo"
+                    />
+                    {/* <h3 className="slider-package-testimonials">Parle agro</h3> */}
                   </figure>
                   <p>
                     We recommend them highly for HVAC needs we work with them
@@ -143,8 +165,12 @@ const Testimonials = () => {
               <div className="testimonial-card-section">
                 <div className="card parent-profile-box ">
                   <figure className="d-flex">
-                    <img src={dsp} alt="image"  className="testimonial-clientslogo"/>
-                    <h3 className="slider-package-testimonials">DSP</h3>
+                    <img
+                      src={dsp}
+                      alt="image"
+                      className="testimonial-clientslogo"
+                    />
+                    {/* <h3 className="slider-package-testimonials">DSP</h3> */}
                   </figure>
                   <p>
                     We work with pentagon for design & build projects for last

@@ -21,42 +21,40 @@ const OurPride = () => {
             </div>
             <div className="col-md-8 col-sm-12 pt-3">
               <div
-                id="demo"
+                id="demo1"
                 className="carousel slide"
                 data-bs-ride="carousel"
-                data-bs-interval="3000" // Auto slide every 3 seconds
+                data-bs-interval="2500" // Auto slide every 3 seconds
               >
                 <div className="carousel-indicators">
                   <button
                     type="button"
-                    data-bs-target="#demo"
+                    data-bs-target="#demo1"
                     data-bs-slide-to="0"
                     className="active color-block-contant"
                     aria-current="true"
-                    aria-label="Slide 1"
                   ></button>
                   <button
                     type="button"
-                    data-bs-target="#demo"
+                    data-bs-target="#demo1"
                     data-bs-slide-to="1"
                     className="color-block-contant"
-                    aria-label="Slide 2"
                   ></button>
                   <button
                     type="button"
-                    data-bs-target="#demo"
+                    data-bs-target="#demo1"
                     data-bs-slide-to="2"
                     className="color-block-contant"
                   ></button>
                   <button
                     type="button"
-                    data-bs-target="#demo"
+                    data-bs-target="#demo1"
                     data-bs-slide-to="3"
                     className="color-block-contant"
                   ></button>
                   <button
                     type="button"
-                    data-bs-target="#demo"
+                    data-bs-target="#demo1"
                     data-bs-slide-to="4"
                     className="color-block-contant"
                   ></button>

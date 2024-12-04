@@ -19,7 +19,7 @@
   width: 100%;
 }
 .contant-right-side {
-  width: 60%;
+  width: 100%;
   padding-left: 10px !important;
   padding-top: 10px !important;
 }
@@ -52,6 +52,16 @@
   padding: 35px 70px;
 }
 
+@media (min-width: 250px) and (max-width: 1400px) {
+  .card-projects-image {
+    width: 300px !important;
+    height: 250px !important;
+    object-fit: cover;
+  }
+  .image-devide-contant {
+    display: block !important;
+  }
+}
 @media (min-width: 250px) and (max-width: 768px) {
   .image-devide-contant {
     display: block !important;
@@ -80,7 +90,7 @@
     padding-top: 30px !important;
   }
   .card-projects-image {
-    width: 200px;
+    width: 100%;
     height: 200px;
     object-fit: cover;
     overflow: hidden;

@@ -28,7 +28,7 @@
     height: 350px;
   }
 }
-@media  (max-width: 1200px) {
+@media (max-width: 1200px) {
   .mumbai-section {
     min-height: 280px !important;
     height: 280px !important;
@@ -47,5 +47,10 @@
   .address-content {
     max-width: 92%;
     margin: 0 auto;
+  }
+}
+@media (min-width: 300px) and (max-width: 1400px) {
+  .card_title {
+    min-height: 50px;
   }
 }
